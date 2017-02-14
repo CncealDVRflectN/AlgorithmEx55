@@ -6,9 +6,7 @@ public class AlgEx {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(new File("input.txt"));
         List<Integer> treeDeg = new ArrayList<>();
-        long num = scanner.nextLong();
-        String bin = Long.toString(num, 2);
-        System.out.println(bin);
+        String bin = Long.toString(scanner.nextLong(), 2);
         int size = bin.length();
         for(int i = 0; i < size; i++){
             if(bin.charAt(i) == '1'){
